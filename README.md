@@ -19,14 +19,17 @@ Neurovia AI is your personalized desktop app for self-journaling with enhanced A
 - **AI Summary:** Get detailed analysis to your strengths or tackle areas that need a little work.
 
 ## How to Install
-1. 
+1. Download the executable installer: [![Download](https://img.shields.io/github/v/release/sxc-bot/Neurovia?label=Download&logo=github&color=blue)](https://github.com/sxc-bot/Neurovia/releases/download/v1.0.0/Neurovia_AI_Setup.exe)
+2. Run the installer (will be automatically installed at C:\Users\Your Username\AppData\Local\Programs\com.neurovia.app)
+3. Finish installation.
+
 
 ## How to Use
 
 1. Grab an API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 2. Navigate to the `Settings` section.
 3. Locate the field for `Gemini API Key` and save your key.
-4. Your key will be saved locally and used for all future AI analyses.
+4. Your key will be saved locally and used for AI analysis.
 
 ## Setting Up
 
