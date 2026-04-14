@@ -24,7 +24,11 @@ interface SentimentAnalysis {
 
 // Retrieve Gemini API key dynamically: prefer user-saved key, fallback to env variable
 const getGeminiApiKey = () => (typeof window !== 'undefined' ? localStorage.getItem('geminiKey') : null) || import.meta.env.VITE_GEMINI_API_KEY;
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const GEMINI_MODEL =
+  (typeof window !== 'undefined' ? localStorage.getItem('geminiModel') : null) ||
+  import.meta.env.VITE_GEMINI_MODEL ||
+  'gemini-3-flash-preview';
+const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 // Get user's language preference
 const getUserLanguage = (): string => {
